@@ -1,0 +1,13 @@
+:root {
+    /* fonts */
+    --font-header: "Archivo", sans-serif;
+    --font-body: "Archivo", sans-serif;
+
+    /* colors */
+    --primary-color: #ED5735;
+    --secondary-color: #2C3545;
+    --tertiary-color: #007BFF;
+    --quaternary-color: #05E300;
+    --gray-color: #AAAAAA;
+    --font-color: #000000;
+}
