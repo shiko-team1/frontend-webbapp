@@ -1,7 +1,7 @@
 import type { CommunityOption } from "../types/communityOption";
 
 // add actual api url here
-const COMMUNITY_API_URL = "https://api.example.com/communities";
+const COMMUNITY_API_URL = "https://shiko-team1-backend-community-api.azurewebsites.net/api/communities/all";
 
 export async function getCommunities(): Promise<CommunityOption[]> {
     const res = await fetch(COMMUNITY_API_URL, {

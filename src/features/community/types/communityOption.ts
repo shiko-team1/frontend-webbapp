@@ -1,6 +1,6 @@
 export type CommunityOption = {
     id: number,
-    title: string,
+    communityName: string,
     iconUrl: string,
-    href?: string
+    url: string
 }
