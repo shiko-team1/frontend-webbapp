@@ -15,7 +15,7 @@ type HelpArticle = {
 };
 
 async function getArticles(): Promise<HelpArticle[]> {
-  const res = await fetch("http://localhost:5203/api/help/articles", {
+  const res = await fetch("https://shiko-helpcenter-api-larsa-dvgbe6dthdhgfqd5.swedencentral-01.azurewebsites.net/api/help/articles", {
     cache: "no-store",
   });
 
