@@ -1,10 +1,10 @@
 import { FaqItem } from "../types/FaqItem";
 
-async function fetchFaqList(courseId: string): Promise<FaqItem[]> {
+async function fetchFaqList(courseId: number): Promise<FaqItem[]> {
     try {
-        const apiUrl = "http://localhost:8080/api/faq/course/";
+        const apiUrl = process.env.API_Course_Faq_Url;
 
-        const res = await fetch(apiUrl + courseId);
+        const res = await fetch(`${apiUrl}/course/${courseId}`);
         if (!res.ok) return [];
 
         const faqList: FaqItem[] = await res.json();

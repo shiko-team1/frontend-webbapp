@@ -2,7 +2,7 @@ import fetchFaqList from "../lib/fetchFaqList";
 import FaqItemCard from "./FaqItemCard";
 
 type FaqSectionProps = {
-  courseId: string;
+  courseId: number;
 };
 
 export default async function FaqSection({ courseId }: FaqSectionProps) {

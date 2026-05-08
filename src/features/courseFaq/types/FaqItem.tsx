@@ -1,6 +1,6 @@
 export type FaqItem = {
   id: string;
-  courseId: string;
+  courseId: number;
   title: string;
   content: string;
 };
