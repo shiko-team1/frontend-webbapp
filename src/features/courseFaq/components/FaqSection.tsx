@@ -21,13 +21,7 @@ export default async function FaqSection({ courseId }: FaqSectionProps) {
   return (
     <div className="test">
       {faqList.map((item, index) => {
-        return (
-          <FaqItemCard
-            key={item.id}
-            faqItem={item}
-            startExpanded={index == 0}
-          />
-        );
+        return <FaqItemCard key={item.id} faqItem={item} index={index} />;
       })}
     </div>
   );

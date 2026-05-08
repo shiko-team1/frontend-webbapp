@@ -1,0 +1,38 @@
+.itemCard {
+  background-color: var(--extra-light-gray-color);
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  font-family: var(--font-body);
+  border-radius: 20px;
+
+  .upperHalf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    button {
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.25rem;
+      border-radius: 50%;
+      background-color: var(--light-gray-color);
+      border: none;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    border-top: 1px dashed var(--light-gray-color);
+    margin-top: 1rem;
+    color: var(--gray-color);
+    padding-top: 1rem;
+    font-size: 0.9rem;
+  }
+}
