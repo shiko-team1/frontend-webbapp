@@ -1,8 +1,13 @@
+'use client';
+
 import Link from "next/link";
 
 import { EyeOff, Lock, User } from "lucide-react";
+import { useAuth } from "@/features/auth/contexts/useAuth";
 
 export function LoginForm() {
+	const { email } = useAuth();
+
 	return (
 		<section className="mx-auto flex w-full max-w-md flex-col items-center justify-center py-6 lg:max-w-none lg:py-0">
 			<div className="mx-auto w-full max-w-md">
@@ -23,6 +28,8 @@ export function LoginForm() {
 							<input
 								type="email"
 								name="email"
+								value={email}
+								readOnly
 								placeholder="Enter your email address"
 								className="w-full rounded-md border border-[#ececec] bg-white py-2.5 pl-10 pr-4 text-sm text-[var(--font-color)] outline-none transition placeholder:text-[#b7b7b7] focus:border-[var(--primary-color)]"
 							/>

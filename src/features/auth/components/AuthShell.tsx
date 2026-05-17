@@ -8,7 +8,7 @@ import logoImage from "../images/logo.png";
 export function AuthShell({ children }: { children: ReactNode }) {
   return (
     <main className="h-screen overflow-hidden bg-[#f7f8f9] p-3 font-[var(--font-body)] sm:p-4 lg:p-5">
-      <div className="mx-auto grid h-full w-full max-w-6xl overflow-hidden rounded-[1.625rem] bg-white lg:grid-cols-[0.9fr_1.1fr]">
+      <div className="mx-auto grid h-full w-full overflow-hidden rounded-[1.625rem] bg-white lg:grid-cols-[2fr_2fr]">
         <aside className="relative min-h-[25rem] overflow-hidden rounded-[1.625rem] bg-[#3f4454] lg:min-h-full">
           <Image
             src={authImage}
